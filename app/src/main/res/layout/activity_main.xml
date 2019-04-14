@@ -27,7 +27,7 @@
         android:layout_width="99dp"
         android:layout_height="103dp"
         android:layout_marginStart="160dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="25dp"
         android:onClick="playpause"
         android:src="@drawable/play"
         app:civ_border_color="#EEEEEE"
@@ -43,7 +43,7 @@
         android:layout_width="124dp"
         android:layout_height="123dp"
         android:layout_marginStart="155dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="40dp"
         android:onClick="stop"
         android:src="@drawable/stop"
         app:civ_border_color="#EEEEEE"
@@ -51,6 +51,28 @@
         app:civ_shadow="true"
         app:civ_shadow_color="#8BC34A"
         app:civ_shadow_radius="10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Play_Pause" />
+
+    <SeekBar
+        android:id="@+id/VolumeSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StopImageView" />
+
+    <SeekBar
+        android:id="@+id/ProgressSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/StopImageView"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Play_Pause" />
 </android.support.constraint.ConstraintLayout>
