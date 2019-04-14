@@ -1,4 +1,4 @@
-# My_Advance_Music_Plaer_App
+# My_Advance_Music_Player_App
 ![image](https://user-images.githubusercontent.com/43893611/56095073-b3062180-5ef6-11e9-9d79-8cb40ad75c6a.png)
 </br>
 Though we have media controller to control our videoView. But since the the audio runs in background. Therefore there is no controller
